@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Unseen Strategy </title>
+
+<!-- Preload de fuentes -->
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" as="style">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@700&display=swap" as="style">
+
+<!-- Tipografías -->
+<link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@700&display=swap" rel="stylesheet">
+
+<!-- Script para ocultar hasta que carguen las fuentes -->
+<script>
+  document.documentElement.classList.add('fonts-loading');
+  window.addEventListener('load', () => {
+    document.documentElement.classList.remove('fonts-loading');
+  });
+</script>
+
+<!-- Estilo para ocultar mientras carga -->
+<style>
+  .fonts-loading body {
+    visibility: hidden;
+  }
+</style>
+
+<!-- Codigo anterior -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Homenaje&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Homenaje&family=Odibee+Sans&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Display:wght@700&display=swap" rel="stylesheet">
+
+
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+
+
+   
+</head>
+
+
+<body>
+
+  <header class="header">
+    <section class="navbar">
+      <div class="logo">
+        <img src="img/LogoMenu.png" alt="Logo">
+      </div>
+    
+      <div class="menu-toggle" id="menu-toggle">
+        ☰
+      </div>
+    
+      <ul class="nav-links">
+        <li><a href="#home" class="activo">Home</a></li>
+        <li><a href="#llamarnos">Qué hacemos</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#somos">Quiénes somos</a></li>
+        <li><a href="#casos">Casos</a></li>
+        <li><a href="#mapa">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </section>
+  </header>
+
+<!-- Fantasmas cruzando -->
+<img src="img/fantasmaAderecha.webp" class="fantasma-cruza izq" alt="Fantasma de izquierda a derecha">
+<img src="img/fantasmaAizquierda.webp" class="fantasma-cruza der" alt="Fantasma de derecha a izquierda">
+
+<!-- Fantasmas flotando -->
+<img src="img/fantasmaAizquierda.webp" class="fantasma-fondo fondo-hero" alt="Fantasma fondo hero">
+<img src="img/fantasmaAderecha.webp" class="fantasma-fondo fondo-somos" alt="Fantasma fondo somos">
+
+
+
+  
+  <div class="hero" id="home">
+    <img src="img/LogoMenu.png" alt="Logo central" class="logo-central">
+  </div>
+
+  <section class="intro" id="intro">
+    <h1 class="titulo-obidee">
+      Un equipo <span class="resaltado">estratégico</span> que aparece cuando lo <span class="resaltado">necesitás</span>
+    </h1>
+    <p class="texto-homenaje">
+      para potenciar la relevancia de tu marca y sus mensajes,<span class="salto-desktop"><br></span>
+      actuando con rapidez, sin llevarnos el mérito.
+    </p>
+    <a href="#servicios" class="descubre-link scroll-invitacion">DESCUBRE CÓMO PODEMOS AYUDARTE</a>
+    <div class="flecha flecha-scroll">⌄</div>
+  </section>
+  
+  <section class="adaptamos" id="servicios">
+    <h2 class="titulo-obidee aparecer flicker-ghost">NOS ADAPTAMOS A.</h2>
+  
+    <div class="tarjetas">
+      <div class="tarjeta aparecer">
+        <div class="etiqueta vibrar-hover" >AGENCIAS EN CRECIMIENTO</div>
+        <p>Nos convertimos en tu equipo de estrategia para ganar nuevos clientes y competir con los grandes players. Mejorando tus costos, somos un equipo a demanda sin tener que mantener un equipo interno.</p>
+      </div>
+  
+      <div class="tarjeta aparecer">
+        <div class="etiqueta vibrar-hover">GRANDES AGENCIAS</div>
+        <p>¿Tu equipo no da abasto?, ¿entró un pitch urgente? Aparecemos detrás de escena para hacer el trabajo y que tu equipo se lleve el mérito. Confidencial y seguro.</p>
+      </div>
+  
+      <div class="tarjeta aparecer">
+        <div class="etiqueta vibrar-hover">EMPRESAS</div>
+        <p>¿Necesitás una segunda opinión?, ¿tu equipo de marketing y comunicación necesita una mano con la estrategia de marca? ¿Te interesa conocer más tu mercado y consumidor?, ¿o mantenerte informado de lo más relevante? Estamos para ayudarte.</p>
+      </div>
+    </div>
+  
+    <h3 class="cierre-obidee aparecer-retardado">Para que puedas con todo, sin tener que ampliar tu staff.</h3>
+  </section>
+  
+  
+  <section class="llamarnos" id="llamarnos">
+    <h2 class="llamarnos-titulo flicker-ghost">NO DUDES EN LLAMARNOS CUANDO.</h2>
+  
+    <div class="llamarnos-grid">
+      <div class="bloque">
+        <img src="img/icono1.webp" alt="Ícono 1">
+        <p>Cuando necesitás alinear a tu equipo y encontrar tu foco.</p>
+        <ul>
+          <li>WORKSHOPS PERSONALIZADOS.</li>
+        </ul>
+      </div>
+  
+      <div class="bloque">
+        <img src="img/icono2.webp alt="Ícono 2">
+        <p>Cuando necesitás ordenar y dar nuevo valor a tu marca.</p>
+        <ul>
+          <li>ESTRATEGIA DE POSICIONAMIENTO DE MARCA</li>
+          <li>ESTRATEGIA DE SOCIAL MEDIA.</li>
+        </ul>
+      </div>
+  
+      <div class="salto-linea"></div>
+
+      <div class="bloque">
+        <img src="img/icono3.webp" alt="Ícono 3">
+        <p>Cuando necesitás conocer tu mercado y sus oportunidades.</p>
+        <ul>
+          <li>ANÁLISIS DE MERCADO</li>
+          <li>ANÁLISIS DEL CONSUMIDOR</li>
+          <li>REPORTES DE TENDENCIAS MENSUALES O PUNTUALES</li>
+        </ul>
+      </div>
+  
+      <div class="bloque">
+        <img src="img/icono4.webp" alt="Ícono 4">
+        <p>Cuando tenés que mostrar relevancia, coherencia y potenciar tus mensajes.</p>
+        <ul>
+          <li>TERRITORIOS PARA CAMPAÑA CREATIVA.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <section class="clientes" id="clientes">
+    <div class="clientes-texto">
+      <p>Trabajamos en</p>
+      <h2><span class="verde">+</span> <span class="azul flicker-ghost">DE 100 PROYECTOS</span></h2>
+      <p>para empresas, agencias y sus clientes</p>
+    </div>
+  
+    <div class="clientes-logos">
+      <div class="fila">
+        <img src="img/logo1.png" alt="logo1">
+        <img src="img/logo2.png" alt="logo2">
+        <img src="img/logo3.png" alt="logo3">
+        <img src="img/logo4.png" alt="logo4">
+        <img src="img/logo5.png" alt="logo5">
+      </div>
+      <div class="fila">
+        <img src="img/logo6.png" alt="logo6">
+        <img src="img/logo7.png" alt="logo7">
+        <img src="img/logo8.png" alt="logo8">
+        <img src="img/logo9.png" alt="logo9">
+        <img src="img/logo10.png" alt="logo10">
+      </div>
+    </div>
+  </section> 
+
+  <section class="casos" id="casos">
+    <div class="casos-header">
+      <p>Casos de</p>
+      <h2 class="titulo-obidee flicker-ghost">ESTRATEGIA QUE SE VE, AUNQUE NO NOS VEAS.</h2>
+    </div>
+  
+    <div class="casos-slider">
+      <button class="arrow left">&#10094;</button>
+  
+      <div class="casos-wrapper">
+        <div class="caso">
+          <span class="etiqueta vibrar-hover">REEL SHORTS | CONTENIDO ON-DEMAND | MÉXICO</span>
+          <h3>EL DESAFÍO</h3>
+          <p class="descripcion">Nos dimos cuenta de que no veníamos a competir con Netflix, Disney o Amazon. Nuestro verdadero reto era conquistar los momentos que ellos ignoran: los tiempos muertos donde el entretenimiento rápido y sin compromiso gana la partida.</p>
+          <h3>LA ESTRATEGIA</h3>
+          <p class="descripcion">En México, el drama no es un género, es un estilo de vida. Está en la lucha libre, en las telenovelas, en cada celebración y hasta en la comida. Reel Shorts toma esa intensidad cultural y la destila en su versión más pura: historias de un minuto, diseñadas para consumirse en cualquier momento. Reel Short se convierte en esa dosis justa de drama para los mexicanos. Con tres alternativas: "Ponle drama a cualquier situación"; "Más dramático que tu propia vida", "Que tus dramas duren solo un minuto".</p>
+        </div>
+
+        <div class="caso">
+          <span class="etiqueta vibrar-hover">NATUCHIPS | SNACKS NATURALES | LATAM</span>
+          <h3>EL DESAFÍO</h3>
+          <p class="descripcion">En una categoría donde el snack es más una experiencia que una comida, la naturalidad suele percibirse como aburrida o complicada. Nuestro reto era hacer que lo natural sea tan disfrutable como cualquier otro snack.</p>
+          <h3>LA ESTRATEGIA</h3>
+          <p class="descripcion">Dándole el punto de vista antes mencionado al desafío, desarrollamos tres caminos estratégicos.
+            Camino 1: Verdad del Consumidor:La presión por la artificialidad y la perfección les impide disfrutar de la naturalidad. / Verdad de la Marca: Natuchip te permite disfrutar 
+            de lo natural./ Brand Big Idea: Celebrar la vida naturalmente imperfecta.
+            Camino 2: Verdad del Consumidor: La generación de la inclusión todavía no se anima a ser natural. / Verdad de la marca: Natuchip es la forma fácil de integrar la naturalidad en tu vida./ Brand Big Idea:  Existe una manera sencilla de elegir e incorporar lo natural.
+            Camino 3: Verdad del consumidor: El mundo touch nos quita el human touch./ Verdad de la marca: Natuchips es elaborado con sistema touch. Pero de manos verdaderas y dedicadas de manera natural y lejos de lo artificial./ Brand Big Idea: Un toque de naturalidad en tu vida.
+            </p>
+        </div>
+
+        <div class="caso">
+          <span class="etiqueta vibrar-hover">ALTO PALERMO | CENTRO COMERCIAL - SHOPPING | ARGENTINA</span>
+          <h3>EL DESAFÍO</h3>
+          <p class="descripcion">Descubrimos que Alto Palermo ya no compite contra otros shoppings, sino contra cualquier lugar que ofrezca experiencias memorables. En un mundo donde el consumo es social y la gente prefiere pagar por vivir antes que por poseer, la pregunta clave era: ¿cómo evolucionar de un shopping a un verdadero centro de experiencias?</p>
+          <h3>LA ESTRATEGIA</h3>
+          <p class="descripcion">En un mundo donde el consumo dejó de ser transaccional para volverse experiencial, Alto Palermo deja de ser un shopping para convertirse en un Mercado de Momentos: un espacio donde no solo comprás, sino que vivís experiencias dignas de ser vividas, contadas y recordadas. La marca cree que el mundo sería un lugar mejor si experimentáramos más.
+          </p>
+        </div>
+
+        <div class="caso">
+          <span class="etiqueta vibrar-hover">OTRO CASO | CONTENIDO ON-DEMAND | MÉXICO</span>
+          <h3>EL DESAFÍO</h3>
+          <p class="descripcion">Otro caso. Nos dimos cuenta de que no veníamos a competir con Netflix, Disney o Amazon...</p>
+          <h3>LA ESTRATEGIA</h3>
+          <p class="descripcion">Otro caso. En México, el drama no es un género, es un estilo de vida...</p>
+        </div>
+  
+        <!-- Podés duplicar este bloque <div class="caso">...</div> con más casos -->
+      </div>
+  
+      <button class="arrow right">&#10095;</button>
+    </div>
+  </section>
+  
+  <section class="somos">
+    <h2 class="somos-titulo flicker-ghost">SÍ, SOMOS ASÍ.</h2>
+    <div class="somos-grid">
+  
+      <div class="item">
+        <img src="img/rapidos.webp" alt="Rápidos">
+        <div class="item-content">
+          <h3>RÁPIDOS</h3>
+          <p>El tiempo siempre se agradece pero estamos acostumbrados a resolver rápido.</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="img/simbioticos.webp" alt="Simbióticos">
+        <div class="item-content">
+          <h3>SIMBIÓTICOS</h3>
+          <p>Nos encanta trabajar coordinados con el equipo creativo.</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="img/transparentes.webp" alt="Transparentes">
+        <div class="item-content">
+          <h3>TRANSPARENTES</h3>
+          <p>Sabemos cuáles son nuestros límites y siempre somos claros con qué podemos hacer, en cuánto tiempo y qué necesitamos.</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="img/resolutivos.webp" alt="Resolutivos">
+        <div class="item-content">
+          <h3>RESOLUTIVOS</h3>
+          <p>Somos creativos en la búsqueda de soluciones. Prácticos, dinámicos y positivos.</p>
+        </div>
+      </div>
+  
+      <div class="item">
+        <img src="img/elocuentes.webp" alt="Elocuentes">
+        <div class="item-content">
+          <h3>ELOCUENTES</h3>
+          <p>Nos gusta ser invisibles, pero si necesitás que demos la cara como parte de tu equipo no te vamos a decepcionar.</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <section class="servicios" id="mapa">
+    <img src="img/SeccionGrafico.webp" Mapa de servicios de estrategia de marca>
+  </section>
+
+
+
+  <section class="nosotros" id="somos">
+    <h2 class="nosotros-titulo flicker-ghost">No necesitás vernos para notar el impacto. Pero si insistes...</h2>
+  
+    <div class="nosotros-contenedor">
+      <div class="persona">
+        <img src="img/persona1.webp" alt="Andrés Goldenberg">
+        <h3 class="nombre-obidee">Andrés Goldenberg</h3>
+        <p class="descripcion-type" data-text="Estratega y director de marketing en Editorial Dossier. Con más de 15 años de experiencia en el área comunicación digital y publicitaria. Trabajó en diferentes agencias para marcas como Coca-cola, IBM, American Express, SC, Fox, Nestlé, Kraft, entre otras. Su enfoque: soluciones rápidas, efectivas y siempre invisibles, pero con resultados que hablan por sí solos."></p>
+
+      </div>
+  
+      <div class="persona">
+        <img src="img/persona2.webp" alt="Flavia Frigerio">
+        <h3 class="nombre-obidee">Flavia Frigerio</h3>
+        <p class="descripcion-type" data-text="Estratega independiente de marca, producto y UX. Con doble maestría en Administración y Dirección de Empresas y Comunicación Empresarial y Corporativa. Ha trabajado para marcas como Pfizer, Kimberly-Clark, Volkswagen, Universidad Siglo 21, entre otras. Siempre en las sombras, pero asegurando que cada movimiento tenga impacto."></p>
+       
+      </div>
+    </div>
+  </section>
+  
+  <section class="pie" id="contacto">
+    <div class="pie-contenido">
+      <img src="img/fantasmaPie.webp" alt="Ghost" class="fantasma-pie">
+      <p class="flicker-ghost">
+        Brindamos confianza y seguridad<br>
+        para afrontar desafíos estratégicos.
+      </p>
+      <form action="https://formspree.io/f/mgvarkvr" method="POST" class="formulario-contacto">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu correo" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <p class="frase-contacto">
+        O escribinos directo a <a href="mailto:ghost@unseenstrategy.com">ghost@unseenstrategy.com</a>
+      </p>
+      
+      
+    </div>
+  </section>
+  
+
+  <footer class="footer">
+    <div class="footer-top">
+      <img src="img/logoFooter.png" alt="Ghost Unseen Strategy" class="footer-logo" />
+    </div>
+
+      <p class="footer-copy">© 2025 Ghost unseen strategy<br>Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  
+
+    
+    
+    
+
+    
+
+
+    
+  
+
+  <script>
+    document.querySelectorAll('.persona img').forEach(img => {
+      img.addEventListener('click', () => {
+        img.classList.toggle('show');
+      });
+    });
+  </script>
+  
+
+  
+
+    <script>
+      const wrapper = document.querySelector('.casos-wrapper');
+      const slides = document.querySelectorAll('.caso');
+      const btnLeft = document.querySelector('.arrow.left');
+      const btnRight = document.querySelector('.arrow.right');
+      let current = 0;
+    
+      function updateSlider() {
+        wrapper.style.transform = `translateX(-${current * 100}%)`;
+      }
+    
+      btnRight.addEventListener('click', () => {
+        if (current < slides.length - 1) current++;
+        else current = 0;
+        updateSlider();
+      });
+    
+      btnLeft.addEventListener('click', () => {
+        if (current > 0) current--;
+        else current = slides.length - 1;
+        updateSlider();
+      });
+    </script>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+  
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+  <script>
+    document.addEventListener('scroll', () => {
+      document.querySelectorAll('.aparecer, .aparecer-retardado').forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if (top < window.innerHeight - 80) {
+          el.classList.add('visible');
+        }
+      });
+    });
+    </script>
+    
+  
+    
+
+
+    <script>
+      function typeWriter(element, text, delay = 20) {
+        let i = 0;
+        function type() {
+          if (i < text.length) {
+            element.innerHTML = text.substring(0, i + 1);
+            i++;
+            setTimeout(type, delay);
+          }
+        }
+        type();
+      }
+    
+      const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.3
+      };
+    
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            const text = el.getAttribute('data-text');
+            if (text && !el.classList.contains('done')) {
+              el.classList.add('done');
+              typeWriter(el, text);
+            }
+          }
+        });
+      }, options);
+    
+      document.querySelectorAll('.descripcion-type').forEach(el => {
+        observer.observe(el);
+      });
+    </script>
+    
+    <script>
+      const fantasmaIzq = document.querySelector('.fantasma-cruza.izq');
+      const fantasmaDer = document.querySelector('.fantasma-cruza.der');
+    
+      function lanzarFantasma(fantasma, delay) {
+        setTimeout(() => {
+          fantasma.classList.add('mostrar');
+          setTimeout(() => {
+            fantasma.classList.remove('mostrar');
+          }, 6000);
+        }, delay);
+      }
+    
+      function loopFantasmas() {
+        lanzarFantasma(fantasmaIzq, 1000);
+        lanzarFantasma(fantasmaDer, 8000);
+        setInterval(() => {
+          lanzarFantasma(fantasmaIzq, 0);
+          lanzarFantasma(fantasmaDer, 7000);
+        }, 16000);
+      }
+    
+      document.addEventListener('DOMContentLoaded', loopFantasmas);
+    </script>
+    
+    
+
+</body>
+</html>
